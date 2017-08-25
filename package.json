@@ -1,0 +1,19 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "agenda de contatos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobrasil/agenda.git"
+  },
+  "author": "João Brasil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobrasil/agenda/issues"
+  },
+  "homepage": "https://github.com/jobrasil/agenda#readme"
+}
