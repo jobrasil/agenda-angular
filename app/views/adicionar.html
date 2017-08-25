@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <h3>Novo contato</h3>
+        
+        <div class="alert alert-warning" ng-if="mensagem">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" ng-click="clearMessage()">&times;</a>
+            <strong>{{mensagem}}</strong>
+        </div>
+
+        <form class="form-horizontal">
+            <form-contato></form-contato>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <button type="button" class="btn btn-success" ng-click="salvar()">Salvar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

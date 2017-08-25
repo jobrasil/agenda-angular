@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agenda de Contatos</title>
+    <base href="/">
+
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body ng-app="appAgenda">
+    
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+           <a class="navbar-brand" href="#">Contatos</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active" ng-class="{active: activetab == '/adicionar'}"><a href="/adicionar">Cadastros <span class="sr-only">(current)</span></a></li>
+        <li ng-class="{active: activetab == '/documentacao'}"><a href="/documentacao">Documentação</a></li>
+        <li ng-class="{active: activetab == '/'}"><a href="/">Listagem</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+    
+
+    <div class="container">
+        <div class="container-fluid">
+                <div ng-view></div>
+            </div>
+    </div>
+
+    <script type="application/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="application/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
+
+    <script type="application/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="application/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+   
+
+    <script type="text/javascript" src="../app/app.js"></script>
+    <script type="text/javascript" src="../app/routes.js"></script>
+    <script type="text/javascript" src="../app/config.js"></script>
+
+    <script type="text/javascript" src="../app/controllers/ListaController.js"></script>
+    <script type="text/javascript" src="../app/controllers/AdicionarController.js"></script>
+    <script type="text/javascript" src="../app/controllers/DocumentacaoController.js"></script>
+    <script type="text/javascript" src="../app/services/ContatosService.js"></script>
+    <script type="text/javascript" src="../app/directives/ContatoDirective.js"></script>
+    <script type="text/javascript" src="../app/directives/FormContatoDirective.js"></script> 
+
+</body>
+
+</html>
