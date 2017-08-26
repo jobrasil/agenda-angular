@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/jobrasil/agenda/issues"
   },
-  "homepage": "https://github.com/jobrasil/agenda#readme"
+  "homepage": "https://github.com/jobrasil/agenda#readme",
+  "devDependencies": {
+    "angular-mocks": "^1.6.6",
+    "angular-ui-router": "^1.0.3",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  }
 }
